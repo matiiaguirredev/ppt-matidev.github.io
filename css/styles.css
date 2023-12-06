@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+
+
+}
+
+:root {
+    --clr-gold: #e0a314;
+    --clr-beige: #171b08;
+    --clr-purple: rgb(214, 130, 82);
+}
+
+body {
+    background-color:  var(--clr-purple);
+    color: var(--clr-beige);
+
+}
+
+header{ 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+
+}
+
+.marcador {
+    display: flex;
+    background-color: var(--clr-gold);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-purple);
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--clr-beige);
+    background-color: var(--clr-purple);
+    line-height: 1;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-gold);
+
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+
+
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+
+
+}
+
+.marcador .puntos {
+    font-size: 1.6rem;
+
+
+}
+
+.eleji-tu-arma { 
+    margin-bottom: 2rem;
+    
+
+}
+
+.elegi-tu-arma h2 {
+    font-size: 1.2rem;
+    font-weight:  400;
+    margin-bottom: .75rem;
+
+
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: .75rem;
+
+}
+
+.arma:hover {
+    transform: scale(1.5);
+
+}
+
+.arma {
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--clr-gold);
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+
+}
+
+.mensaje .eleccion {
+    color: var(--clr-purple);
+    background-color: var(--clr-gold);
+    padding-inline: .25rem;
+    border-radius: .25rem;
+
+
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.disabled {
+    display: none;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-top: 12rem;
+}
